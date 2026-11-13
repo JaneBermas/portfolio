@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Jane Bermas — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ============================================
+         PAGE LOADER
+         ============================================ -->
+    <div class="page-loader" role="status" aria-label="Loading Jane Bermas portfolio">
+      <!-- HUD corner brackets (pic 1 background) -->
+      <span class="hud-corner hud-corner--tl" aria-hidden="true"></span>
+      <span class="hud-corner hud-corner--tr" aria-hidden="true"></span>
+      <span class="hud-corner hud-corner--bl" aria-hidden="true"></span>
+      <span class="hud-corner hud-corner--br" aria-hidden="true"></span>
+
+      <!-- Center loader (pic 2 style) -->
+      <div class="loader-body" aria-hidden="true">
+        <span class="loader-label">LOADING</span>
+        <div class="loader-pill">
+          <div class="loader-pill__track">
+            <div class="loader-pill__fill">
+              <span class="loader-pill__shimmer"></span>
+            </div>
+          </div>
+          <span class="loader-pill__dot loader-pill__dot--l"></span>
+          <span class="loader-pill__dot loader-pill__dot--r"></span>
+        </div>
+        <span class="loader-percent">0%</span>
+      </div>
+    </div>
+
+    <!-- ============================================
+         HEADER / NAVIGATION
+         ============================================ -->
+    <header class="header">
+      <a href="#home" class="logo" aria-label="Jane Bermas, home">
+        <span>Jane Bermas</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navigationbar" id="site-navigation" aria-label="Main navigation">
+        <a href="#home" data-index="01">Home</a>
+        <a href="#about" data-index="02">About</a>
+        <a href="#services" data-index="03">Education</a>
+        <a href="#skills" data-index="04">Skills</a>
+        <a href="#works" data-index="05">Projects</a>
+        <a href="#contact" class="nav-contact"
+          >Contact <i class="bx bx-arrow-up-right" aria-hidden="true"></i
+        ></a>
+      </nav>
+    </header>
+
+    <!-- ============================================
+         HOME / HERO
+         ============================================ -->
+    <section class="home" id="home">
+      <div class="home-img">
+        <img src="assets/jane.jpg" alt="Portrait of Jane Bermas" />
+      </div>
+
+      <div class="home-content">
+        <h3>Hello,</h3>
+        <h1>Jane Bermas</h1>
+        <h3>And I'm a <span class="multiple-text">UI Designer</span></h3>
+        <p>
+          I'm a Computer Science student building responsive websites, Arduino
+          prototypes, and digital designs. I enjoy turning practical ideas into
+          clear, useful experiences.
+        </p>
+
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/jane-roth-bermas-4b7336384/" target="_blank" rel="noopener noreferrer"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/JaneBermas" target="_blank" rel="noopener noreferrer"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.facebook.com/janeroth.bermas" target="_blank" rel="noopener noreferrer"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/exgenxs/" target="_blank" rel="noopener noreferrer"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
+        <div class="home-actions">
+          <a
+            class="btn cv-download-btn"
+            id="cv-open"
+            href="./jane_bermas.pdf"
+            download="Jane-Bermas-CV.pdf"
+          >
+            <i class="bx bx-download" aria-hidden="true"></i>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT
+         ============================================ -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>I'm a <span>Frontend Developer</span></h3>
+        <p>
+          I'm studying Computer Science and strengthening my frontend skills
+          through hands-on web, robotics, and visual design projects.
+        </p>
+        <p>I'm always open to learning, collaboration, and new challenges.</p>
+        <a href="#contact" class="btn">Let's Talk</a>
+      </div>
+
+      <div class="about-img">
+        <img src="assets/about.jpg" alt="About Jane Bermas" />
+      </div>
+    </section>
+
+    <!-- ============================================
+         EDUCATION
+         ============================================ -->
+    <section class="services" id="services">
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow">My journey</p>
+          <h2 class="heading">Education</h2>
+        </div>
+        <p class="section-summary">
+          The schools that shaped my curiosity and built the foundation for my
+          growth in technology and design.
+        </p>
+      </div>
+
+      <div class="schools-container">
+        <div class="school-box">
+          <span class="school-number" aria-hidden="true">01</span>
+          <img src="assets/tigman.jpg" alt="Tigman Elementary School emblem" />
+          <p class="school-level">Elementary</p>
+          <h3>Tigman Elementary School</h3>
+          <p>
+            My first classrooms helped build the study habits I still rely on.
+          </p>
+        </div>
+
+        <div class="school-box">
+          <span class="school-number" aria-hidden="true">02</span>
+          <img src="assets/villazar.jpg" alt="Villazar National High School emblem" />
+          <p class="school-level">High school</p>
+          <h3>Villazar National High School</h3>
+          <p>
+            I explored new interests and learned to work confidently with
+            others.
+          </p>
+        </div>
+
+        <div class="school-box">
+          <span class="school-number" aria-hidden="true">03</span>
+          <img src="assets/lourdes.jpg" alt="Our Lady of Lourdes College Foundation emblem" />
+          <p class="school-level">College</p>
+          <h3>Our Lady of Lourdes College Foundation</h3>
+          <p>
+            I'm pursuing Computer Science and learning through practical
+            projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS
+         ============================================ -->
+    <section class="skills" id="skills">
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow">My capabilities</p>
+          <h2 class="heading">Skills I'm <span>expanding</span></h2>
+        </div>
+        <p class="section-summary">
+          Growing my skills in both visual design and programming to create
+          better experiences.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Creative Toolkit Panel -->
+        <article class="skill-panel">
+          <div class="skill-panel__heading">
+            <span class="skill-icon" aria-hidden="true">
+              <i class="bx bxs-palette"></i>
+            </span>
+            <div>
+              <p class="eyebrow">Creative toolkit</p>
+              <h3>Design &amp; content</h3>
+            </div>
+          </div>
+          <ul class="skill-tags">
+            <li><i class="bx bxs-paint" aria-hidden="true"></i>Photoshop</li>
+            <li><i class="bx bx-wand-magic-sparkles" aria-hidden="true"></i>Creative editing</li>
+            <li><i class="bx bx-cube" aria-hidden="true"></i>3D creation</li>
+          </ul>
+        </article>
+
+        <!-- Digital Toolkit Panel -->
+        <article class="skill-panel">
+          <div class="skill-panel__heading">
+            <span class="skill-icon" aria-hidden="true">
+              <i class="bx bx-code-alt"></i>
+            </span>
+            <div>
+              <p class="eyebrow">Digital toolkit</p>
+              <h3>Web &amp; programming</h3>
+            </div>
+          </div>
+          <div class="skill-meters">
+            <div class="skill-meter">
+              <div class="skill-meter__label">
+                <span>General Programming &amp; Fundamentals</span>
+                <span>40%</span>
+              </div>
+              <div
+                class="skill-meter__track"
+                role="progressbar"
+                aria-label="General programming skill level"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="40"
+              >
+                <span style="width: 40%"></span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================
+         WORKS / PROJECTS
+         ============================================ -->
+    <section class="works" id="works">
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow">My projects</p>
+          <h2 class="heading">My <span>Works</span></h2>
+        </div>
+        <p class="section-summary">
+          A selection of projects spanning hardware, robotics, and creative
+          design.
+        </p>
+      </div>
+
+      <div class="wrapper">
+        <div class="works-item">
+          <img src="assets/arduino.jpg" alt="Arduino project" />
+          <h3>Arduino</h3>
+          <p>
+            I enjoy making simple projects using Arduino to build smart and
+            interactive devices.
+          </p>
+        </div>
+
+        <div class="works-item">
+          <img src="assets/car.jpg" alt="Self-driving robot" />
+          <h3>Self-Driving Robot</h3>
+          <p>
+            My colleague and I made self-driving robots that can move and make
+            decisions on their own.
+          </p>
+        </div>
+
+        <div class="works-item">
+          <img src="assets/tshirt.jpg" alt="T-shirt design" />
+          <h3>T-shirt Design</h3>
+          <p>
+            I design creative and stylish t-shirt layouts using Adobe for
+            unique and personalized prints.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT
+         ============================================ -->
+    <section class="contact" id="contact">
+      <div class="contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">Let's connect</p>
+          <h2>Let's make a useful idea real.</h2>
+          <p>
+            For project inquiries, creative collaborations, or a quick hello,
+            reach me through one of my profiles.
+          </p>
+          <a
+            class="btn contact-cta"
+            href="mailto:janeruthbermas@gmail.com?subject=Portfolio%20inquiry"
+          >
+            Start a conversation
+            <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="contact-links" aria-label="Contact and social profiles">
+          <a class="contact-link" href="https://www.linkedin.com/in/jane-roth-bermas-4b7336384/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__icon" aria-hidden="true"><i class="bx bxl-linkedin"></i></span>
+            <span class="contact-link__copy"><span>LinkedIn</span><strong>Jane Bermas</strong></span>
+            <i class="bx bx-link-external contact-link__external" aria-hidden="true"></i>
+          </a>
+          <a class="contact-link" href="https://github.com/JaneBermas" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__icon" aria-hidden="true"><i class="bx bxl-github"></i></span>
+            <span class="contact-link__copy"><span>GitHub</span><strong>JaneBermas</strong></span>
+            <i class="bx bx-link-external contact-link__external" aria-hidden="true"></i>
+          </a>
+          <a class="contact-link" href="https://www.instagram.com/exgenxs/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__icon" aria-hidden="true"><i class="bx bxl-instagram"></i></span>
+            <span class="contact-link__copy"><span>Instagram</span><strong>janeyy</strong></span>
+            <i class="bx bx-link-external contact-link__external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.linkedin.com/in/jane-roth-bermas-4b7336384/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/JaneBermas" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
+        <a href="https://www.facebook.com/janeroth.bermas" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/exgenxs/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <p class="copyright">&copy; Jane Bermas — All Rights Reserved</p>
+    </footer>
+
+    <!-- ============================================
+         CV DIALOG
+         ============================================ -->
+    <dialog class="cv-dialog" id="cv-dialog" aria-labelledby="cv-title">
+      <div class="cv-dialog__panel">
+        <div class="cv-dialog__header">
+          <div class="cv-dialog__heading">
+            <p>Jane Bermas</p>
+            <h2 id="cv-title">Curriculum Vitae</h2>
+          </div>
+          <div class="cv-dialog__actions">
+            <a
+              class="btn cv-download"
+              href="./jane_bermas.pdf"
+              download="Jane-Bermas-CV.pdf"
+            >
+              <i class="bx bx-download" aria-hidden="true"></i>
+              <span>Download CV</span>
+            </a>
+            <button class="cv-close" type="button" aria-label="Close CV viewer" data-cv-close>
+              <i class="bx bx-x" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <iframe class="cv-frame" src="./jane_bermas.pdf" title="Jane Bermas curriculum vitae">
+          <p>
+            Your browser cannot display this PDF.
+            <a href="./jane_bermas.pdf" download="Jane-Bermas-CV.pdf">Download the CV</a>.
+          </p>
+        </iframe>
+      </div>
+    </dialog>
+
+    <!-- ============================================
+         SCRIPT
+         ============================================ -->
+    <script>
+      /* ===== PAGE LOADER =====
+         Tracks actual image loading progress with a minimum
+         display time so the animation doesn't flash. */
+      (function initLoader() {
+        const loaderPercent = document.querySelector(".loader-percent");
+        const loaderBar = document.querySelector(".loader-pill__fill");
+        const images = Array.from(document.querySelectorAll("img"));
+        const startedAt = performance.now();
+        const minDuration = 1500; // 1.5s minimum
+        let loaded = 0;
+        let hidden = false;
+
+        // Count already-complete images (cached)
+        images.forEach((img) => {
+          if (img.complete || img.naturalWidth > 0) loaded++;
+          else {
+            img.addEventListener("load", () => loaded++, { once: true });
+            img.addEventListener("error", () => loaded++, { once: true });
+          }
+        });
+
+        function tick(now) {
+          const elapsed = now - startedAt;
+          const timeProgress = Math.min(elapsed / minDuration, 1);
+          const imageProgress = images.length > 0 ? loaded / images.length : 1;
+          // Use whichever is slower so both time and images must finish
+          const progress = Math.min(timeProgress, imageProgress);
+          const pct = Math.round(progress * 100);
+
+          loaderPercent.textContent = pct + "%";
+          loaderBar.style.width = pct + "%";
+
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          } else {
+            hideLoader();
+          }
+        }
+
+        function hideLoader() {
+          if (hidden) return;
+          hidden = true;
+          document.body.classList.add("page-loaded");
+        }
+
+        requestAnimationFrame(tick);
+        // Safety: hide after 5s no matter what
+        setTimeout(hideLoader, 5000);
+      })();
+
+      /* ===== MOBILE MENU ===== */
+      const menuToggle = document.querySelector(".menu-toggle");
+      const siteNavigation = document.querySelector(".navigationbar");
+
+      const closeMenu = () => {
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        document.body.classList.remove("menu-open");
+      };
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+        document.body.classList.toggle("menu-open", !isOpen);
+      });
+
+      /* ===== NAVIGATION SCROLLSPY ===== */
+      const navigationLinks = [...siteNavigation.querySelectorAll("a")];
+      const navigationSections = navigationLinks
+        .map((link) => document.querySelector(link.hash))
+        .filter(Boolean);
+
+      const updateCurrentLink = (hash) => {
+        navigationLinks.forEach((link) => {
+          if (link.hash === hash) link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        });
+      };
+
+      updateCurrentLink(window.location.hash || "#home");
+
+      navigationLinks.forEach((link) =>
+        link.addEventListener("click", () => {
+          updateCurrentLink(link.hash);
+          closeMenu();
+        }),
+      );
+
+      window.addEventListener("hashchange", () => updateCurrentLink(window.location.hash));
+
+      const updateNavigationOnScroll = () => {
+        /* Use 40% down from the top of the viewport as the "active" trigger line.
+           Whichever section's top is above that line is the current one. */
+        const triggerY = window.innerHeight * 0.4;
+        const isAtPageBottom =
+          window.innerHeight + window.scrollY >=
+          document.documentElement.scrollHeight - 4;
+
+        const currentSection = isAtPageBottom
+          ? navigationSections[navigationSections.length - 1]
+          : [...navigationSections]
+              .reverse()
+              .find((section) => section.getBoundingClientRect().top <= triggerY)
+            ?? navigationSections[0];
+
+        if (currentSection) updateCurrentLink("#" + currentSection.id);
+      };
+
+      const sectionObserver = new IntersectionObserver(updateNavigationOnScroll, {
+        rootMargin: "-90px 0px -60% 0px",
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+      });
+
+      navigationSections.forEach((section) => sectionObserver.observe(section));
+      sectionObserver.observe(document.querySelector(".footer"));
+      window.addEventListener("scroll", updateNavigationOnScroll, { passive: true });
+      window.addEventListener("resize", updateNavigationOnScroll);
+      window.addEventListener("load", updateNavigationOnScroll, { once: true });
+      updateNavigationOnScroll();
+
+      /* ===== DOWNLOAD CV =====
+         Uses fetch+blob so the browser is forced to download the PDF
+         instead of opening it in-tab. Falls back to the native
+         <a download> when fetch fails (e.g. strict file:// policy). */
+      document.querySelector("#cv-open").addEventListener("click", async (event) => {
+        event.preventDefault();
+        const link = event.currentTarget;
+        const url = link.getAttribute("href");
+        const filename = link.getAttribute("download") || "Jane-Bermas-CV.pdf";
+
+        try {
+          const res = await fetch(url);
+          if (!res.ok) throw new Error("fetch failed");
+          const blob = await res.blob();
+          // Force PDF mime so browser always treats it as a download
+          const pdfBlob = new Blob([blob], { type: "application/octet-stream" });
+          const blobUrl = URL.createObjectURL(pdfBlob);
+          const a = Object.assign(document.createElement("a"), {
+            href: blobUrl,
+            download: filename,
+            style: "display:none",
+          });
+          document.body.append(a);
+          a.click();
+          a.remove();
+          setTimeout(() => URL.revokeObjectURL(blobUrl), 3000);
+        } catch {
+          // Native fallback — works when served via HTTP
+          const a = Object.assign(document.createElement("a"), {
+            href: url,
+            download: filename,
+            style: "display:none",
+          });
+          document.body.append(a);
+          a.click();
+          a.remove();
+        }
+      });
+
+      /* ===== KEYBOARD ===== */
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeMenu();
+      });
+
+      /* ===== JS SCROLL SNAP FALLBACK =====
+         CSS scroll-snap doesn't work on file:// in some browsers.
+         This JS version listens for scroll end and snaps to the
+         nearest section — works everywhere including file://. */
+      (function initScrollSnap() {
+        const sections = [
+          ...document.querySelectorAll("section, .footer")
+        ];
+        let snapTimer = null;
+        let isSnapping = false;
+
+        function snapToNearest() {
+          if (isSnapping) return;
+          const headerH = document.querySelector(".header").offsetHeight;
+          const scrollY = window.scrollY;
+          const viewH   = window.innerHeight;
+          const center  = scrollY + viewH / 2;
+
+          // Find the section whose center is closest to viewport center
+          let best = sections[0];
+          let bestDist = Infinity;
+          sections.forEach((s) => {
+            const top  = s.offsetTop;
+            const mid  = top + s.offsetHeight / 2;
+            const dist = Math.abs(mid - center);
+            if (dist < bestDist) { bestDist = dist; best = s; }
+          });
+
+          const target = best.offsetTop - headerH;
+          if (Math.abs(scrollY - target) > 4) {
+            isSnapping = true;
+            window.scrollTo({ top: target, behavior: "smooth" });
+            setTimeout(() => { isSnapping = false; }, 600);
+          }
+        }
+
+        window.addEventListener("scroll", () => {
+          clearTimeout(snapTimer);
+          snapTimer = setTimeout(snapToNearest, 80);
+        }, { passive: true });
+
+        // Also snap on nav link click
+        navigationLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            const target = document.querySelector(link.hash);
+            if (!target) return;
+            e.preventDefault();
+            const headerH = document.querySelector(".header").offsetHeight;
+            isSnapping = true;
+            window.scrollTo({ top: target.offsetTop - headerH, behavior: "smooth" });
+            setTimeout(() => { isSnapping = false; }, 700);
+            updateCurrentLink(link.hash);
+            closeMenu();
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
